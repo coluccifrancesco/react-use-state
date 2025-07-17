@@ -1,0 +1,49 @@
+:root{
+    --btn-bg: #0D6EFD;
+    --btn-active: #FFC008;
+    --usually-white: #ffffff;
+    --usually-black: #000000;
+}
+
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px auto;
+}
+
+button{
+    font-size: 1.3rem;
+    font-family: "Jost", sans-serif;
+    
+    background-color: var(--btn-bg);
+    color: var(--usually-white);
+    border: 3px solid transparent;
+    border-radius: 10px;
+    padding: 10px 20px;
+    
+    transition: 0.15s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--usually-white);
+        color: var(--btn-bg);
+        border: 3px solid var(--btn-bg);
+    }
+
+    &:active{
+        background-color: var(--btn-active);
+        color: var(--usually-black);
+        border: 3px solid transparent;
+    }
+}

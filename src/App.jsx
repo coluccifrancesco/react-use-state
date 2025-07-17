@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import Main from '../src/main/Main';
 import './App.css';
+import '../src/main/main.css';
 
 function App() {
 
